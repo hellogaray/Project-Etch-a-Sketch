@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Project-Rock-Paper-Scissors </h1>
-  <p>The Odin Project - Rock Paper Scissors Project</p>
+  <h1>Project-Etch-a-Sketch</h1>
+  <p>The Odin Project - Etc-a-Sketch</p>
   <p>
     <img src="https://img.icons8.com/color/48/000000/html-5.png" alt="HTML5 Icon" width="40" height="40"/>
     <img src="https://img.icons8.com/color/48/000000/css3.png" alt="CSS3 Icon" width="40" height="40"/>
@@ -9,9 +9,9 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/hellogaray/Project-Rock-Paper-Scissors" alt="GitHub last commit">
-  <img src="https://img.shields.io/github/repo-size/hellogaray/Project-Rock-Paper-Scissors" alt="GitHub repo size">
-  <img src="https://img.shields.io/github/license/hellogaray/Project-Rock-Paper-Scissors" alt="GitHub license">
+  <img src="https://img.shields.io/github/last-commit/hellogaray/Project-Etch-a-Sketch" alt="GitHub last commit">
+  <img src="https://img.shields.io/github/repo-size/hellogaray/Project-Etch-a-Sketch" alt="GitHub repo size">
+  <img src="https://img.shields.io/github/license/hellogaray/Project-Etch-a-Sketch" alt="GitHub license">
 </p>
 
 
