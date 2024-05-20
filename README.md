@@ -14,25 +14,28 @@
   <img src="https://img.shields.io/github/license/hellogaray/Project-Etch-a-Sketch" alt="GitHub license">
 </p>
 
-
-Welcome to the Rock Paper Scissors Game! This is a simple yet thrilling game implemented using HTML, CSS, and JavaScript.
+Welcome to the Online Etch A Sketch project! This web application recreates the classic Etch A Sketch drawing toy in a digital format, allowing users to draw freely and unleash their creativity.
 
 ## Description
 
-This project implements a basic Rock Paper Scissors game where the user can click on one of the choices (rock, paper, or scissors) and play against the computer. The game logic determines the winner based on the choices made by the user and the computer (randomly generated).
+Experience the nostalgic joy of doodling on an Etch A Sketch, right from your browser! This project implements the beloved drawing toy using HTML, CSS, and JavaScript, providing an interactive and fun way to create unique artworks.
 
 ## Features
 
-- Allows the user to play Rock Paper Scissors against the computer.
-- Keeps track of the user's score and the computer's score.
-- Displays the result of each round and the overall winner when one player reaches a score of 5.
+- Simulates the Etch A Sketch drawing experience in a digital format.
+- Allows users to draw by clicking and dragging the cursor across the grid.
+- Clear the screen at any time to start anew.
+- Provides an interactive and fun way to unleash creativity.
 
 ## Usage
 
-- Click on one of the choices (rock, paper, or scissors) to make your selection.
-- The computer will randomly choose its option.
-- The result of the round will be displayed, and the score will be updated accordingly.
-- Continue playing until one player reaches a score of 5.
+1. Clone or download the repository.
+2. Open the `index.html` file in your web browser.
+3. Click and drag your mouse cursor across the grid to draw.
+4. Release the mouse button to stop drawing.
+5. Click the "Clear" button to erase the entire drawing and start fresh.
+6. Let your imagination run wild and create anything you desire on the digital Etch A Sketch!
+
 
 ## Original Version
 <div align="center">
