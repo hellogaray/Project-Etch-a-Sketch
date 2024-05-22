@@ -9,6 +9,10 @@ sideBar.addEventListener("click", function(event) {
         action = "r";
     } else if (target.matches("#eraseBtn")) {
         action = "e";
+    } else if (target.matches("#burnBtn")) {
+        action = "b"
+    } else if (target.matches("#dodgeBtn")) {
+        action = "l"
     } else {
         action = "d"
     }
@@ -40,6 +44,10 @@ function gridMaker(rows, cols) {
                         rainbowOver(cell);
                     } else if (action === "e") {
                         clearPaint(cell);
+                    } else if (action === "b") {
+                        burnOver(cell);
+                    } else if (action === "l") {
+                        dodgeOver(cell);
                     }
                 }
             });
@@ -62,9 +70,26 @@ function clearPaint(cell) {
 
 //Sets cell's background to a random hex color
 function rainbowOver(cell) {
-    const randomHexColor = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
-    cell.style.backgroundColor = randomHexColor
+    const base = 200, variance = 55;
+    const r = Math.floor((Math.random() * variance) + base);
+    const g = Math.floor((Math.random() * variance) + base);
+    const b = Math.floor((Math.random() * variance) + base);
+    const randomPastelHexColor = `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+    cell.style.backgroundColor = randomPastelHexColor;
 }
+
+//Sets cell's oppacity 0.1 darker
+function burnOver(cell) {
+    let currentOpacity = parseFloat(window.getComputedStyle(cell).opacity);
+    cell.style.opacity = currentOpacity + 0.1;
+}
+
+//Sets cell's oppacity 0.1 ligther
+function dodgeOver(cell) {
+    let currentOpacity = parseFloat(window.getComputedStyle(cell).opacity);
+    cell.style.opacity -= currentOpacity - 0.1;
+}
+
 
 // Cleans the grid
 function gridCleaner() {

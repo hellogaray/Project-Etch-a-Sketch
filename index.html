@@ -4,28 +4,30 @@
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etc-a-Sketch</title>
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./style.css">
-    
-    <!-- Script -->
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="sideBar">
-        <button id="drawBtn">Draw</button>
-        <button id="rainbowBtn">Rainbow</button>
-        <button id="eraseBtn">Erase</button>
-        <button id="clearBtn">Clear</button>
-    </div>
+    <nav id="sideBar" aria-label="Sidebar">
+        <button id="drawBtn" aria-label="Draw mode">Draw</button>
+        <button id="rainbowBtn" aria-label="Paint mode">Paint</button>
+        <button id="eraseBtn" aria-label="Erase mode">Erase</button>
+        <button id="burnBtn" aria-label="Burn mode">Burn</button>
+        <button id="dodgeBtn" aria-label="Dodge mode">Dodge</button>
+        <button id="clearBtn" aria-label="Clean canvas">Clean</button>
+    </nav>
 
-    <div id="content">
-        <div id="container"></div>
-    </div>
-
+    <main id="content">
+        <section id="container" aria-label="Drawing area"></section>
+    </main>
 
     <footer>
-        <a href="https://github.com/hellogaray" title="Github Link">@hellogaray</a>
+        <a href="https://github.com/hellogaray" title="Github Link" class="styled-link">@hellogaray</a>
     </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
