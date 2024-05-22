@@ -4,12 +4,16 @@
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Etc-a-Sketch</title>
+    <title>Etch-a-Sketch</title>
     
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Title -->
+    <header id="title">Etch-a-Sketch</header>
+
+    <!-- Sidebar navigation -->
     <nav id="sideBar" aria-label="Sidebar">
         <button id="drawBtn" aria-label="Draw mode">Draw</button>
         <button id="rainbowBtn" aria-label="Paint mode">Paint</button>
@@ -17,12 +21,17 @@
         <button id="burnBtn" aria-label="Burn mode">Burn</button>
         <button id="dodgeBtn" aria-label="Dodge mode">Dodge</button>
         <button id="clearBtn" aria-label="Clean canvas">Clean</button>
+        <div id="sliderDiv" aria-label="Size Slider">
+            <input  type="range" class="slider" min="0" max="20" value="16" id="gridSize" autocomplete="off"> 
+        </div>
     </nav>
 
+    <!-- Main content area -->
     <main id="content">
         <section id="container" aria-label="Drawing area"></section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <a href="https://github.com/hellogaray" title="Github Link" class="styled-link">@hellogaray</a>
     </footer>

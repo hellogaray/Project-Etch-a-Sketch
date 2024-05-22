@@ -1,3 +1,4 @@
+/* Define CSS custom properties */
 :root {
     --grid-cols: 1;
     --grid-rows: 1;
@@ -21,21 +22,32 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Title styles */
+#title {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Main container */
 #container {
     display: flex;
     justify-content: center;
-    margin: 20px;
-    border: 2px solid var(--contaner-border);
+    margin: 10px;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     background-color: var(--background-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Generic column styles */
 [class^="column"] {
     align-content: center;
     text-align: center;
 }
 
+/* Generic cell styles */
 [class^="cell"] {
     justify-content: center;
     align-items: center;
@@ -45,38 +57,76 @@ body {
     background-color: var(--background-color);
 }
 
+/* Content area */
 #content {
     flex: 1;
 }
 
-#container {
-    margin: 20px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    background-color: #fff;
+/* Slider container */
+#sliderDiv {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
 }
 
+/* Grid size slider */
+#gridSize {
+    width: 100%;
+}
+
+/* Sidebar */
 #sideBar {
     margin: 50px 20px 20px 20px;
 }
 
-footer a {
-    padding: 10px;
-    text-decoration: none;
+/* Range input styles */
+input[type="range"] {
+    width: 100%;
+    height: 5px;
+    background: var(--border-color);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 10px;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    color: #fff;
+/* Slider thumb styles for WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--border-color);
 }
 
+input[type="range"]::-webkit-slider-thumb:hover {
+    background: var(--background-color);
+}
+
+/* Slider thumb styles for Mozilla Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid var(--border-color);
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background: var(--background-color);
+}
+
+/* Button styles */
 button {
     font-size: .8rem;
     width: 60px;
     height: 30px;
-    margin: 20px;
-    border: 2px solid var(--contaner-border);
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--container-border);
     background-color: var(--background-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -86,9 +136,9 @@ button:hover {
     background-color: var(--text-color);
 }
 
+/* Styled link styles */
 .styled-link {
     font-size: 14px;
-    color: #3498db;
     text-decoration: none;
     border: 2px solid transparent;
     padding: 10px 20px;
@@ -98,4 +148,28 @@ button:hover {
 
 .styled-link:hover {
     color: #ffffff;
+}
+
+/* Footer styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    border-top: 1px solid var(--border-color); /* Optional: add a border at the top */
+    margin-top: 20px; /* Optional: adjust margin */
+}
+
+/* Footer link styles */
+footer a {
+    margin: 0 10px; /* Optional: adjust margin between links */
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* Change color on hover */
 }
